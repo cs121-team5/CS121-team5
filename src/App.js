@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Hello World! Welcome to our CS121 homepage
         </a>
       </header>
     </div>
