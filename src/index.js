@@ -5,9 +5,9 @@ import LatexModel from './components/LatexModel';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  // <React.StrictMode>
-    <LatexModel />,
-  // </React.StrictMode>,
+  <React.StrictMode>
+    <LatexModel />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
