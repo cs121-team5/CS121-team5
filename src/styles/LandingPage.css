@@ -1,0 +1,149 @@
+.header {
+    text-align: center;
+    font-size: 45px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    background: white;
+    padding-bottom: 20px;
+}
+
+
+@include media-breakpoint-up(sm) {
+    .header { 
+        padding-top: 30px;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .message { 
+        padding-top: 30px;
+    }
+}
+
+.message {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+h1 { color: black; 
+    font-family: "Times New Roman", Times, serif;
+    font-size: 130px; 
+    font-weight: normal; 
+    line-height: 48px; 
+    margin: 0 0 50px; 
+    text-align: center; 
+    text-shadow: 1px 1px 2px #082b34; 
+}
+
+.displayNone {
+    display: none;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose-file {
+    padding-top: 20px;
+}
+
+.myButton {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+}
+
+.myButton + label {
+	box-shadow: 0px 0px 6px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:15px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	padding:10px 19px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #112d73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myButton:hover + label,
+.myButton + label:hover {
+	position:relative;
+	top:1px;
+}
+
+.myButton:active + label {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px; 
+    padding-bottom: 50px;
+}
+
+.upload-button {
+    width:80%;
+    font-size: 20px;
+}
+
+.image-preview {
+    margin-top: 70px;
+    height: 250px;
+    width: 250px;
+    border: 10px solid #ddd;
+}
+
+.spinner {
+    padding-top: 50px;
+}
+
+
+
+/* 
+.choose {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+}
+
+.choose + label {
+    background-color: white;
+    box-shadow: 0px 5px 0px grey;
+    width: 200px;
+    height:40px;
+    font-size: 1em;
+    font-weight: 500;
+    color: black;
+    line-height: 2.6em;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    transition: 150ms;
+}
+
+.choose:focus + label,
+.choose + label:hover {
+    background-color: grey;
+    box-shadow: 0px 3px 0px grey;
+    cursor:pointer;
+}
+
+.choose:focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+} */
