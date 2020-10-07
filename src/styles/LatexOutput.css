@@ -19,6 +19,10 @@ header {
     }
 }
 
+/* .container {
+    display: table;
+} */
+
 .message {
     padding-top: 15px;
     text-align: center;

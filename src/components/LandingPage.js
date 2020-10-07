@@ -1,5 +1,10 @@
 import '../styles/LandingPage.css'
 import ResultPage from '../components/LatexOutput';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+
+
+
 var React = require("react");
 
 
@@ -52,6 +57,15 @@ class LandingPage extends React.Component {
                     </div> */}
                 </div>
                 {image}
+                <div className="cont">
+                    <Grid container  >
+                    <Grid item sm>
+                    <Paper style = {{padding:20, marginTop:10, marginBottom:10, textAlign: 'center'}}>
+                        Output
+                    </Paper>
+                    </Grid>
+                    </Grid>
+                </div>
                 {/* {results} */}
             </div>
         );

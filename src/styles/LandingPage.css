@@ -20,6 +20,14 @@
         padding-top: 30px;
     }
 }
+.cont {
+display: flex;
+justify-content: center;
+align-items: center;
+padding-right: 30px;
+padding-bottom: 50px;
+padding-left: 30px;
+}
 
 .message {
     padding-top: 15px;
