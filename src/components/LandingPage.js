@@ -16,20 +16,20 @@ class LandingPage extends React.Component {
         } else {
             image = <div className="row"></div>
         }
-        // if (this.props.currentStep == 3) {
-        //     results =
-        //         <div className="row spinner">
-        //             <div className="col-12 center-div">
-        //                 <button class="btn btn-primary" type="button" disabled>
-        //                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-        //                     Detecting flower
-        //                 </button>
-        //             </div>
-        //         </div>
-        // } else if (this.props.currentStep == 1) {
-        //     results = <ResultPage result={this.props.response} />
-        // } else {
-        //     results = <div></div>
+        if (this.props.currentStep == 3) {
+            results =
+                <div className="row spinner">
+                    <div className="col-12 center-div">
+                        <button class="btn btn-primary" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Detecting flower
+                        </button>
+                    </div>
+                </div>
+        } else if (this.props.currentStep == 1) {
+            results = <div>this.props.response</div>
+        } else {
+            results = <div></div>
         // }
         return (
             <div className="container">
@@ -66,7 +66,7 @@ class LandingPage extends React.Component {
                     </Grid>
                     </Grid>
                 </div>
-                {/* {results} */}
+                {{results}}
             </div>
         );
     }
