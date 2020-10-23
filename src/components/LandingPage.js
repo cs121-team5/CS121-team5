@@ -17,6 +17,7 @@ class LandingPage extends React.Component {
             image = <div className="row"></div>
         }
         if (this.props.currentStep == 3) {
+            console.log('working')
             results =
                 <div className="row spinner">
                     <div className="col-12 center-div">
@@ -27,10 +28,10 @@ class LandingPage extends React.Component {
                     </div>
                 </div>
         } else if (this.props.currentStep == 1) {
-            results = <div>this.props.response</div>
+            results = <div>{this.props.response}</div>
         } else {
             results = <div></div>
-        // }
+            }
         return (
             <div className="container">
                 <div className="row">
@@ -66,7 +67,7 @@ class LandingPage extends React.Component {
                     </Grid>
                     </Grid>
                 </div>
-                {{results}}
+                {results}
             </div>
         );
     }

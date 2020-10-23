@@ -9,7 +9,7 @@ class LatexModel extends React.Component {
         console.log('Requesting from API');
         var formData = new FormData();
         formData.append('image', this.state.img_file);
-        fetch('https://latex-converter.com/predict', {
+        fetch('http://127.0.0.1:5000/predict', {
             method: 'POST',
             body: formData
         }).then(
