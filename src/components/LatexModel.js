@@ -7,22 +7,22 @@ class LatexModel extends React.Component {
     };
     fetchResult = () => {
         console.log('Requesting from API');
-        // var formData = new FormData();
-        // formData.append('image', this.state.img_file);
-        // fetch('https://latex-converter.com/predict', {
-        //     method: 'POST',
-        //     body: formData
-        // }).then(
-        //     resp => {
-        //         console.log(resp)
-        //         resp.json().then(data => {
-        //             this.setState({
-        //                 currentStep: 1,
-        //                 response: data
-        //             });
-        //         });
-        //     }
-        // );
+        var formData = new FormData();
+        formData.append('image', this.state.img_file);
+        fetch('https://latex-converter.com/predict', {
+            method: 'POST',
+            body: formData
+        }).then(
+            resp => {
+                console.log(resp)
+                resp.json().then(data => {
+                    this.setState({
+                        currentStep: 1,
+                        response: data
+                    });
+                });
+            }
+        );
     };
     handleChange = (event) => {
         this.setState({
