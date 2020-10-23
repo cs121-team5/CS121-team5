@@ -28,7 +28,7 @@ class LandingPage extends React.Component {
                     </div>
                 </div>
         } else if (this.props.currentStep == 1) {
-            results = <div>{this.props.response}</div>
+            results = <div>{this.props.response['equation']}</div>
         } else {
             results = <div></div>
             }
