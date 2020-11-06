@@ -6,6 +6,9 @@ class LatexModel extends React.Component {
         currentStep: 0
     };
     fetchResult = () => {
+        this.setState({
+            currentStep: 3,
+        });
         console.log('Requesting from API');
         var formData = new FormData();
         formData.append('image', this.state.img_file);
@@ -27,19 +30,20 @@ class LatexModel extends React.Component {
             }
         );
     };
-    handleChange = (event) => {
+    handleInput = (event) => {
+        if (event.target.files[0]) {
         this.setState({
             img_file: event.target.files[0],
             img_obj: URL.createObjectURL(event.target.files[0]),
-            currentStep: 3
-        }, () => {
-            this.fetchResult()
-        })
+            currentStep: 2
+        })}
     };
+
+
 
     render() {
         return (
-            <LandingPage handleChange={this.handleChange} fetchResult={this.fetchResult} img={this.state.img_obj} currentStep={this.state.currentStep}
+            <LandingPage handleInput={this.handleInput} fetchResult={this.fetchResult} img={this.state.img_obj} currentStep={this.state.currentStep}
                 response={this.state.response} />
         );
     }
