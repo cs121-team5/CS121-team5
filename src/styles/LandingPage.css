@@ -55,6 +55,7 @@ h1 { color: black;
     align-items: center;
 }
 
+
 .spanner {
     display: flex;
     justify-content: center;
@@ -159,6 +160,20 @@ a:visited { text-decoration: none; color:blue; }
     background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
 	background-color:#476e9e;
 }
+
+.lightButton { 
+    transform: translateX(75vw);
+    padding-right: 100px;
+    border: solid #74a1ee 2px; 
+    /* margin:0 2px 0 0;  */
+    padding:7px 10px; 
+    -webkit-user-select: none; -moz-user-select: none; user-select: none; -moz-border-radius: 4px; 
+    border-radius: 4px; 
+    background: #ebecee; }
+
+    .lightButton:hover:enabled{
+        background: #74a1ee; 
+    }
 
 
 /* 

@@ -19,6 +19,7 @@ class LatexModel extends React.Component {
         }).then(
             resp => {
                 console.log(resp)
+                if (resp.ok) {
                 resp.json().then(data => {
                     this.setState({
                         currentStep: 1,
@@ -26,7 +27,14 @@ class LatexModel extends React.Component {
                     });
                     console.log(data['equation'])
                     console.log('done')
-                });
+                });}
+                else {
+                    let text = resp['status'] + ' ' + resp['statusText']
+                    this.setState({
+                        currentStep:1,
+                        response: {'equation':text}
+                    });
+                }
             }
         );
     };
