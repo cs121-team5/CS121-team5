@@ -1,5 +1,6 @@
 import React, { Component } from 'react'; 
 
+// Class responsible for the tooltip overlay
 class Tooltip extends Component {
     constructor(props) {
       super(props);
